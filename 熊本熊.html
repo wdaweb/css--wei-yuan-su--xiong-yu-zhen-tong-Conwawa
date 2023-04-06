@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .face{
+            width: 300px;
+            height: 300px;
+            margin:auto;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+        .face::before{
+            content: '';
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top:40%;
+            left:-5%;
+        }
+        .face::after{
+            content: '';
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top:40%;
+            left:80%;
+        }
+        .leyeswhite{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top:25%;
+            left:20%
+        }
+
+        .leyeswhite::before{
+            content: '';
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute; 
+            left:200%
+        }
+
+        .leyeswhite::after{
+            content: '';
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute; 
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+        .reyes{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute; 
+            left:250%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+        .rears{
+            
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color:black;
+            position: absolute; 
+            left:250%;
+            bottom:150%;
+        }
+        .rears::after{
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color:white;
+            position: absolute; 
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+        .lears{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color:black;
+            position: absolute;
+            bottom:150%;
+            right:50%
+            
+        }
+
+        .lears::before{
+            content: '';
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute; 
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);    
+        }
+        .nose{
+            width: 120px;
+            height:75px;
+            border-radius:80%;
+            background-color: white;
+            position: absolute;
+            left:50%;
+            top:55%;
+            transform: translate(-50%,-50%);
+        }
+        .nose::before{
+            content: '';
+            width: 70px;
+            height:25px;
+            border-radius:80%;
+            background-color: black;
+            position: absolute;
+            left:50%;
+            top:65%;
+            transform: translate(-50%,-50%);
+        }
+
+        .nose::after{
+            content: '';
+            width: 30px;
+            height:20px;
+            border-radius:80%;
+            background-color: black;
+            position: absolute;
+            left:50%;
+            top:20%;
+            transform: translate(-50%,-50%);
+        }
+        .v{
+            width: 35px;
+            height: 45px;
+            background-color: white;
+            position: absolute;
+            transform: skewX(40deg);
+            left:85%;
+            top:240%;
+        }
+        .v::after{
+            content: '';
+            width: 35px;
+            height: 45px;
+            background-color: white;
+            position: absolute;
+            transform: skewX(-60deg);
+            left:120%;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="nose"></div>    
+            <div class="leyeswhite">
+                <div class="reyes"></div>
+                <div class="rears"></div>
+                <div class="lears"></div>
+                <div class="v"></div>
+            </div>
+        
+    <div>
+        
+    </div>
+</body>
+</html>

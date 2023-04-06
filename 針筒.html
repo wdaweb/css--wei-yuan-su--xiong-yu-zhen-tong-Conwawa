@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black{
+            width:40px;
+            height:90px;
+            background-color: black;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50% -50%);
+            z-index: 1;
+            border:1px solid black;
+        }
+        .black::before{
+            content: '';
+            width:200px;
+            height:90px;
+            position: absolute;
+            right:41px;
+            z-index: -1;
+            border:0.5px solid gray;
+            background-image: linear-gradient(180deg,white 0%,rgb(234, 225, 225) 70%,white 100%);
+        }
+        .black::after{
+            content: '';
+            width:200px;
+            height:90px;
+            position: absolute;
+            left:40px;
+            z-index: -1;
+            
+            border:0.5px solid gray;
+            background-image: linear-gradient(180deg,rgba(251, 244, 112,0.5) 0%,rgb(234, 225, 225) 70%,rgba(251, 244, 112,0.5));
+        }
+        .zebra{
+            background: linear-gradient(90deg,transparent 98%,black 100%) repeat-x left top/20px 20px;
+            position: absolute;
+            width:200px;
+            height: 100px;
+            left:30px;
+            z-index: 3;
+        }
+        .zebra::before{
+            content: '';
+            background: linear-gradient(90deg,transparent 98%,black 100%) repeat-x left top/20px 20px;
+            position: absolute;
+            width:200px;
+            height: 100px;
+            right:240px;
+            z-index: 3;
+        }
+        .tube{
+            width: 45px;
+            height:60px;
+            border: 0.5px solid gray;
+            border-radius: 0px 5px 5px 0px;
+            
+            position: absolute;
+            left:240px;
+            top:15px;
+            z-index: 5;
+            background-image: linear-gradient(180deg,white 0%,rgb(234, 225, 225) 80%,white 100%);
+        }
+        .tube::before{
+            content: '';
+            width: 45px;
+            height:60px;
+            border: 0.5px solid gray;
+            border-right: none;
+            position: absolute;
+            right:488px;
+            z-index: 6;
+            background-image: linear-gradient(180deg,white 0%,rgb(234, 225, 225) 80%,white 100%);
+        }
+        .tube::after{
+            content: '';
+            width: 40px;
+            height:90px;
+            border: 0.5px solid gray;
+            border-radius: 5px;
+            position: absolute;
+            right:533px;
+            top:-15px;
+            z-index: 7;
+            background-image: linear-gradient(180deg,white 0%,rgb(234, 225, 225) 70%,white 100%);
+        }
+        .niddle{
+            width: 130px;
+            height: 0.5px;
+            border: 0.02px solid gray;
+            background-color: gray;
+            position: absolute;
+            left:280px ;
+            top:45px;
+            z-index: 3;
+        }
+        .text{
+            width: 150px;
+            height: 20px;
+            font-size: 1rem;
+            color: rgb(203, 201, 201);
+            position: absolute;
+            right:85px;
+            top:65px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="black">
+        <div class="zebra"></div>
+        <div class="tube"></div>
+        <div class="niddle"></div>
+        <div class="text">Made in Taiwan</div>
+    </div>
+    
+</body>
+</html>
